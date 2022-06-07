@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Usuario } from '../model/Usuario';
 import { AuthService } from '../service/auth.service';
 
@@ -9,15 +10,17 @@ import { AuthService } from '../service/auth.service';
 })
 export class CadastrarComponent implements OnInit {
 
-  user: Usuario = new Usuario
+  user: Usuario = new Usuario()
   confirmarSenha: string 
   tipoUsuario: string
 
   constructor(
-    private authService: AuthService
+    private authService: AuthService,
+    private router: Router
   ) { }
 
   ngOnInit() {
+    window.scroll(0,0)
   }
 
   confirmaSenha(event: any){

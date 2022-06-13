@@ -5,6 +5,6 @@ export class Postagem{
     public id: number;
     public titulo: string;
     public texto: string;
-    public usuario: Usuario
+    public usuario: Usuario;
     public tema: Tema
 }

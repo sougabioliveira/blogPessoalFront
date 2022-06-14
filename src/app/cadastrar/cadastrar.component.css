@@ -1,0 +1,7 @@
+#img-bg{
+    background-image: url("../../assets/imagem/bolo-com-recheio-de-leite-em-po.jpg");
+    min-height: 900px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

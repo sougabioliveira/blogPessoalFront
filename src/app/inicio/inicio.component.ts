@@ -31,6 +31,7 @@ export class InicioComponent implements OnInit {
   ) { }
 
   ngOnInit(){
+    window.scroll(0,0)
   
     if(environment.token == ''){
       this.router.navigate(['/entrar'])
@@ -59,11 +60,11 @@ getAllPostagens(){
   })
 }
 
-findByIdUsuario(){
-  this.authService.getByIdUsuario(this.idUsuario).subscribe((resp: Usuario)=>{
-    this.usuario = resp
-  })
-
+findByIdUsuario(){ 
+    this.authService.getByIdUsuario(this.idUsuario).subscribe((resp: Usuario)=>{
+      this.usuario = resp
+      console.log(this.usuario)
+    })
 }
 
   publicar(){

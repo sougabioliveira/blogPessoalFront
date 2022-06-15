@@ -30,7 +30,7 @@
 
         <div class="form-group m-4">
             <label for="senha">Senha</label>
-            <input (input)="confirmaSenha($event)" class="form-control" type="password" name="senha"
+            <input (input)="confirmarSenha($event)" class="form-control" type="password" name="senha"
                 id="senha" placeholder="Sua senha">
         </div>
 
@@ -43,7 +43,7 @@
 
         <div class="form-group m-4">
             <label for="tipo">Tipo de usuário</label>
-            <select (change)="tipoUser($event)" class="form-control" name="tipo" id="tipo">
+            <select (change)="tipoUsuarios($event)" class="form-control" name="tipo" id="tipo">
                 <option>Selecione um tipo de usuário:</option>
                 <option value="normal">Normal</option>
                 <option value="adm">Administrador</option>
